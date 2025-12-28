@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Library Management System</h1>
+
+<input type="text" id="search" placeholder="Search Book..." onkeyup="searchBook()">
+
+<form id="bookForm">
+    <input type="text" id="bookName" placeholder="Book Name" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="bookId" placeholder="Book ID" required>
+    <button>Add Book</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Issue</th>
+            <th>Return</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="bookList"></tbody>
+</table>
+
+<button onclick="logout()" class="logout">Logout</button>
+
+<script src="script.js"></script>
+</body>
+</html>
